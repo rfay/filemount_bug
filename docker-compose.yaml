@@ -4,5 +4,3 @@ services:
     image: solr:8
     volumes:
       - "$PWD/solr-configupdate.sh:/docker-entrypoint-initdb.d/solr-configupdate.sh"
-volumes:
-  solr:
