@@ -1,0 +1,8 @@
+version: "3.6"
+services:
+  solr:
+    image: solr:8
+    volumes:
+      - "$PWD/solr-configupdate.sh:/docker-entrypoint-initdb.d/solr-configupdate.sh"
+volumes:
+  solr:
